@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Reviews - Auto Info</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: white;
+      color: black;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+    }
+
+    .navbar img {
+      height: 45px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      text-decoration: underline;
+    }
+
+    /* Heading */
+    .page-title {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 20px 40px;
+    }
+
+    /* Grid of Reviews */
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 0 40px 40px;
+    }
+
+    .review-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="logo.jpg" alt="Auto Info Logo" onclick="location.href='Index.html'">
+    <div class="nav-links">
+      <a href="bikes.html">Bikes</a>
+      <a href="cars.html">Cars</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html" class="active">Reviews</a>
+    </div>
+  </div>
+
+  <!-- Page Title -->
+  <div class="page-title">
+    User Reviews
+  </div>
+
+  <!-- Review Images Grid -->
+  <div class="review-grid">
+    <img src="USER REVIEW.png" alt="User Review 1">
+    <img src="USER REVIEW.png" alt="User Review 2">
+    <img src="USER REVIEW.png" alt="User Review 3">
+    <img src="USER REVIEW.png" alt="User Review 4">
+    <img src="USER REVIEW.png" alt="User Review 5">
+    <img src="USER REVIEW.png" alt="User Review 6">
+    <img src="USER REVIEW.png" alt="User Review 7">
+    <img src="USER REVIEW.png" alt="User Review 8">
+    <img src="USER REVIEW.png" alt="User Review 9">
+    <img src="USER REVIEW.png" alt="User Review 10">
+    <img src="USER REVIEW.png" alt="User Review 11">
+    <img src="USER REVIEW.png" alt="User Review 12">
+  </div>
+
+</body>
+</html>

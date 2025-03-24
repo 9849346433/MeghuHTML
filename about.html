@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Auto Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: black;
+}
+
+.logo img {
+    width: 130px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Main Section - Text Image + Car Image */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 100px auto 20px auto;
+    padding: 0 20px;
+}
+
+/* Left-Aligned Text Image */
+.text-image img {
+    width: 300%;
+    max-width: 600px;
+}
+
+/* Right-Aligned Car Image */
+.car-image img {
+    width: 70%;
+    max-width: 500px;
+    
+}
+
+/* Centered Paragraph Below */
+.about-text {
+    max-width: 1000px;
+    margin: 20px auto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+</style>
+<body>
+
+    <header>
+        <div class="logo" onclick="location.href='index.html'">
+            <img src="logo.jpg" alt="Auto Info Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="bikes.html">Bikes</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-container">
+        <div class="text-image">
+            <img src="AUTOMOBILE REVIEWS SIMPLIFIED..png" alt="Automobile Reviews Simplified">
+        </div>
+        <div class="car-image">
+            <img src="logo3.png" alt="Car">
+        </div>
+    </section>
+
+    <section class="about-text">
+        <p>Welcome to AutoInfo, your go-to platform for simple, easy-to-understand car insights! We know that car specifications, ratings, and reviews can be confusing—especially if you're not a car expert. That’s why AutoInfo breaks down complex details into clear, layman-friendly explanations, helping you make informed decisions without the technical jargon.</p>
+    </section>
+
+</body>
+</html>

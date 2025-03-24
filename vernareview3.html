@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyundai Verna - User Review</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background-color: white;
+      color: black;
+    }
+
+    /* Header */
+    .navbar {
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    .navbar img {
+      height: 45px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      text-decoration: underline;
+    }
+
+    /* Form Section */
+    .form-container {
+      padding: 40px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 40px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 20px;
+      border: 2px solid black;
+      font-size: 14px;
+    }
+
+    .review-title {
+      margin-top: 40px;
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .slider-section {
+      margin: 30px auto;
+      width: 60%;
+    }
+
+    .slider-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .slider-row label {
+      width: 100px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .slider-row input[type="range"] {
+      width: 150px;
+      -webkit-appearance: none;
+      height: 8px;
+      background: black;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    .slider-row span {
+      font-size: 20px;
+      font-weight: bold;
+      width: 30px;
+      text-align: center;
+    }
+
+    .submit-btn {
+      display: block;
+      margin: 30px auto;
+      padding: 15px 30px;
+      background-color: black;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      width: 40%;
+    }
+
+    .submit-btn::after {
+      content: "★";
+      margin-left: 10px;
+    }
+
+    /* Request Section */
+    .request-section {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 14px;
+    }
+
+    .request-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .request-form input {
+      width: 250px;
+      margin: 8px;
+      padding: 10px;
+      border-radius: 20px;
+      border: 2px solid black;
+    }
+
+    .request-form textarea {
+      width: 400px;
+      height: 100px;
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .request-form button {
+      margin-top: 10px;
+      font-size: 30px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 20px 0 40px;
+      text-align: center;
+      position: relative;
+    }
+
+    .footer-links {
+      margin-bottom: 10px;
+    }
+
+    .footer-links a {
+      color: white;
+      margin: 0 10px;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .social-icons {
+      margin: 10px 0;
+    }
+
+    .social-icons i {
+      margin: 0 10px;
+      font-size: 18px;
+    }
+
+    .copyright {
+      font-size: 13px;
+    }
+
+    /* Decorative Corners */
+    .corner {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      bottom: 0;
+    }
+
+    .corner.left {
+      left: 0;
+      background: url('file-CpMtaj7NEzf9464USzTQBS') no-repeat;
+      background-size: cover;
+    }
+
+    .corner.right {
+      right: 0;
+      background: url('file-GPTr7dKmLs1sUZAMRDxuT1') no-repeat;
+      background-size: cover;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="navbar">
+    <img src="logo.jpg" alt="Auto Info Logo" onclick="location.href='index.html'">
+    <div class="nav-links">
+      <a href="bikes.html">Bikes</a>
+      <a href="cars.html">Cars</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html" class="active">Reviews</a>
+    </div>
+  </div>
+
+  <!-- Main Form -->
+  <div class="form-container">
+    <div class="form-grid">
+      <div>
+        <label>First Name</label>
+        <input type="text">
+      </div>
+      <div>
+        <label>Last Name</label>
+        <input type="text">
+      </div>
+      <div>
+        <label>E-mail</label>
+        <input type="email">
+      </div>
+      <div>
+        <label>Phone Number</label>
+        <input type="tel">
+      </div>
+    </div>
+
+    <div class="review-title">Enter your review</div>
+
+    <div class="slider-section">
+      <div class="slider-row">
+        <label>ENGINE</label>
+        <input type="range" min="1" max="10" value="5">
+        <input type="range" min="1" max="10" value="5">
+        <span>5</span>
+      </div>
+      <div class="slider-row">
+        <label>TECH</label>
+        <input type="range" min="1" max="10" value="5">
+        <input type="range" min="1" max="10" value="5">
+        <span>5</span>
+      </div>
+      <div class="slider-row">
+        <label>BRAKING</label>
+        <input type="range" min="1" max="10" value="5">
+        <input type="range" min="1" max="10" value="5">
+        <span>5</span>
+      </div>
+      <div class="slider-row">
+        <label>DESIGN</label>
+        <input type="range" min="1" max="10" value="5">
+        <input type="range" min="1" max="10" value="5">
+        <span>5</span>
+      </div>
+    </div>
+
+    <button class="submit-btn">Submit Your Review</button>
+
+    <!-- Vehicle Request -->
+    <div class="request-section">
+      Missing Vehicle? Please Enter the name to request to be added in our database!
+      <div class="request-form">
+        <div style="display: flex; gap: 20px;">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="E-mail">
+        </div>
+        <textarea placeholder="Enter vehicle name here..."></textarea>
+        <button>&gt;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="corner left"></div>
+    <div class="corner right"></div>
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <a href="#">Support</a>
+    </div>
+    <div class="social-icons">
+      <i>📷</i> <i>✖</i> <i>🔗</i> <i>📘</i>
+    </div>
+    <div class="copyright">
+      © 2025 AutoInfo.com, Inc
+    </div>
+  </footer>
+
+</body>
+</html>

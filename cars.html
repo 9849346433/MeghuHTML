@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Info</title>
+    <script defer src="script.js"></script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 15px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+#search {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#filter-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.car-category {
+    margin: 20px;
+}
+
+.car-category h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.car-card {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 180px;
+    border: 1px solid black;
+}
+
+.car-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.view-all {
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo" onclick="location.href='index.html'">
+            <img src="logo.jpg" alt="Auto Info Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="bikes.html">Bikes</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="search-filter">
+        <input type="text" id="search" placeholder="Search for cars...">
+        <button id="filter-btn">&#128269; Filter</button>
+    </section>
+    
+    <section class="car-category">
+        <h2>Sedan <span class="view-all" onclick="location.href='sedan.html'">View all &#10095;</span></h2>
+        <div class="car-list">
+            <div class="car-card"><img src="Hyundai Verna.png" alt="Hyundai Verna"><br>Hyundai Verna<br>Rs. 17.05L</div>
+            <div class="car-card"><img src="Volkswagen Virtus.png" alt="Volkswagen Virtus"><br>Volkswagen Virtus<br>Rs. 19.34L</div>
+            <div class="car-card"><img src="amaze.png" alt="Honda Amaze"><br>Honda Amaze<br>Rs. 11.19L</div>
+            <div class="car-card"><img src="city.png" alt="Honda City"><br>Honda City<br>Rs. 16.55L</div>
+            <div class="car-card"><img src="bmw.png" alt="BMW M2"><br>BMW M2<br>Rs. 1.03C</div>
+            <div class="car-card"><img src="elantra.png" alt="Hyundai Elantra"><br>Hyundai Elantra<br>Rs. 18.34L</div>
+        </div>
+    </section>
+    
+    <section class="car-category">
+        <h2>SUV <span class="view-all" onclick="location.href='suv.html'">View all &#10095;</span></h2>
+        <div class="car-list">
+            <div class="car-card"><img src="compass.png" alt="Jeep Compass"><br>Jeep Compass<br>Rs. 32.45L</div>
+            <div class="car-card"><img src="harrior.png" alt="Tata Harrier"><br>Tata Harrier<br>Rs. 26.24L</div>
+            <div class="car-card"><img src="safari.png" alt="Tata Safari"><br>Tata Safari<br>Rs. 26.99L</div>
+            <div class="car-card"><img src="scorpio.png" alt="Mahindra Scorpio"><br>Mahindra Scorpio<br>Rs. 17.49L</div>
+            <div class="car-card"><img src="scorpio N.png" alt="Mahindra Scorpio N"><br>Mahindra Scorpio N<br>Rs. 24.69L</div>
+            <div class="car-card"><img src="fortuner.png" alt="Toyota Fortuner"><br>Toyota Fortuner<br>Rs. 51.94L</div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Info</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+    }
+
+    /* Header */
+    header {
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Titles */
+    h2 {
+      margin: 40px 60px 20px;
+      font-size: 24px;
+    }
+
+    /* Image Grid */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 60px;
+      flex-wrap: wrap;
+    }
+
+    .image-row img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    /* Button Section */
+    .review-button-container {
+      text-align: center;
+      margin: 50px 0 30px;
+    }
+
+    .review-button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .review-button:hover {
+      background-color: #333;
+    }
+
+    /* Footer-like black bar */
+    .footer-bar {
+      background-color: #000;
+      height: 60px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Auto Info Logo" onclick="location.href='Index.html'">
+    </div>
+    <nav>
+      <a href="bikes.html">Bikes</a>
+      <a href="cars.html">Cars</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+    </nav>
+  </header>
+
+  <h2>Exterior</h2>
+  <div class="image-row">
+    <img src="exterior1.png" alt="Exterior 1">
+    <img src="exterior2.png" alt="Exterior 2">
+    <img src="exterior3.png" alt="Exterior 3">
+  </div>
+
+  <h2>Interior</h2>
+  <div class="image-row">
+    <img src="interior1.png" alt="Interior 1">
+    <img src="interior2.png" alt="Interior 2">
+    <img src="interior3.png" alt="Interior 3">
+  </div>
+
+  <div class="review-button-container">
+    <a href="Vernareview.html" class="review-button">Go to Reviews</a>
+  </div>
+
+  <div class="footer-bar"></div>
+
+</body>
+</html>
