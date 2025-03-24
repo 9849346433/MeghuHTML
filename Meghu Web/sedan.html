@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Info</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: white;
+    }
+
+    header {
+      background: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 16px;
+      position: relative;
+    }
+
+    .nav-links a:nth-child(2)::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin: 30px auto 20px;
+      width: 80%;
+      border: 2px solid black;
+      border-radius: 30px;
+      padding: 10px 20px;
+      justify-content: space-between;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      font-size: 16px;
+      flex: 1;
+    }
+
+    .search-bar-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar-icons img {
+      height: 24px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin: 20px 60px 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      padding: 0 60px 60px;
+    }
+
+    .card {
+        background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 180px;
+    border: 1px solid black;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card .model {
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .card .price {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo" onclick="location.href='index.html'">
+      <img src="logo.jpg" alt="logo" />
+    </div>
+    <div class="nav-links">
+      <a href="bikes.html">Bikes</a>
+      <a href="cars.html">Cars</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+    <div class="search-bar-icons">
+      <img src="https://img.icons8.com/ios-filled/50/000000/car.png" alt="car"/>
+      <img src="https://img.icons8.com/ios-filled/50/000000/filter.png" alt="filter"/>
+    </div>
+  </div>
+
+  <h2>Sedan</h2>
+
+  <div class="grid">
+    <!-- Sample car cards (repeated for layout) -->
+    <!-- You can copy-paste this block or generate with JS for more cards -->
+    <div class="card">
+      <img src="Hyundai Verna.png" onclick="location.href='vernaPics.html'" alt="Hyundai Verna">
+      <div class="model">Hyundai Verna</div>
+      <div class="price">Rs. 17.05L</div>
+    </div>
+    <div class="card">
+      <img src="Volkswagen Virtus.png" alt="Volkswagen Virtus">
+      <div class="model">Volkswagen Virtus</div>
+      <div class="price">Rs. 19.34L</div>
+    </div>
+    <div class="card">
+      <img src="amaze.png" alt="Honda Amaze">
+      <div class="model">Honda Amaze</div>
+      <div class="price">Rs. 11.19L</div>
+    </div>
+    <div class="card">
+      <img src="city.png" alt="Honda City">
+      <div class="model">Honda City</div>
+      <div class="price">Rs. 16.55L</div>
+    </div>
+    <div class="card">
+      <img src="bmw.png" alt="BMW M2">
+      <div class="model">BMW M2</div>
+      <div class="price">Rs. 1.03C</div>
+    </div>
+    <div class="card">
+      <img src="elantra.png" alt="Hyundai Elantra">
+      <div class="model">Hyundai Elantra</div>
+      <div class="price">Rs. 18.34L</div>
+    </div>
+    <!-- Add more as needed -->
+  </div>
+
+</body>
+</html>

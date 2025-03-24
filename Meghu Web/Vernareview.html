@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hyundai Verna - Overview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Archivo Black', sans-serif;
+    }
+
+    body {
+      background: white;
+      color: #111;
+    }
+
+    header {
+      background-color: #000;
+      padding: 10px 30px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 16px;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    .badges {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .badge {
+      background-color: black;
+      color: white;
+      padding: 6px 15px;
+      border-radius: 5px;
+      font-size: 15px;
+      display: inline-block;
+    }
+
+    .title {
+      font-size: 20px;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    .main-content {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .main-image img {
+      width: 520px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    .review-box {
+      flex: 1;
+    }
+
+    .review-box h3 {
+      margin-bottom: 10px;
+    }
+
+    .pros, .cons {
+      margin-bottom: 25px;
+    }
+
+    .pros ul, .cons ul {
+      padding-left: 25px;
+    }
+
+    .icon {
+      font-size: 22px;
+      margin-right: 10px;
+    }
+
+    .buttons-container {
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      background: #000;
+      color: #fff;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 30px;
+      font-size: 15px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s ease;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn:hover {
+      background: #ff3c3c;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    .review-btn {
+      background: #2b2bff;
+    }
+
+    .review-btn:hover {
+      background: #1a1ae2;
+    }
+
+    footer {
+      background-color: black;
+      height: 60px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.jpg" alt="Auto Info" onclick="location.href='index.html'">
+  </div>
+  <nav>
+    <a href="bikes.html">Bikes</a>
+    <a href="cars.html">Cars</a>
+    <a href="about.html">About</a>
+    <a href="reviews.html">Reviews</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="badges">
+    <div class="badge">Hyundai Verna</div>
+    <div class="badge">🚗 Sedan</div>
+  </div>
+
+  <div class="title">
+    Hyundai Verna is a 5-seater sedan car with price starting from Rs. 11.07 lakh. The car is available in petrol manual and petrol automatic configurations in 10 colours and 16 variants. The car is offered with 1.5 liter petrol engine. Verna is a fuel efficient car with mileage of 20.6 kmpl. Verna is a tough competitor to Honda City, Maruti Ciaz and Skoda Kylaq.
+  </div>
+
+  <div class="main-content">
+    <div class="main-image">
+      <img src="exterior1.png" alt="Hyundai Verna Exterior">
+    </div>
+
+    <div class="review-box">
+      <div class="pros">
+        <h3><span class="icon">👍</span>Pros</h3>
+        <ul>
+          <li>Spacious cabin with great seat comfort</li>
+          <li>Rich features package with the right focus on ease of use</li>
+          <li>Engines offer a strong blend of smoothness and performance</li>
+          <li>ADAS-calibration for Indian driving conditions has been done right</li>
+        </ul>
+      </div>
+
+      <div class="cons">
+        <h3><span class="icon">👎</span>Cons</h3>
+        <ul>
+          <li>Styling won’t appeal to those who prefer subtle designs</li>
+          <li>Some odd feature misses: adaptive cruise control only with the turbo-DCT, no wireless support for Android Auto/Apple CarPlay</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="buttons-container">
+    <a href="vernareview2.html" class="btn review-btn">Read Full Review</a>
+    <a href="#" class="btn">🔍 Find Dealers</a>
+    <a href="compare.html" class="btn">🔗 Compare With</a>
+  </div>
+</div>
+
+<footer></footer>
+
+</body>
+</html>

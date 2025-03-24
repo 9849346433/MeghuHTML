@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Info</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: white;
+            text-align: center;
+        }
+        header {
+            background: black;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .hero {
+            margin: 50px 0;
+        }
+        .hero img {
+            width: 60%;
+            max-width: 600px;
+        }
+        .search-box {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-box input {
+            width: 400px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 25px;
+            font-size: 18px;
+        }
+        .search-box button {
+            background: white;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .trending {
+            margin: 30px;
+        }
+        .trending h2 {
+            font-size: 24px;
+            text-align: left;
+            margin-left: 100px;
+        }
+        .trending-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .trending-item {
+            width: 300px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 18px;
+        }
+        .trending-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="location.href='index.html'">
+            <img src="logo.jpg" alt="Auto Info Logo">
+        </div>
+        <nav class="nav">
+            <a href="bikes.html">Bikes</a>
+            <a href="cars.html">Cars</a>
+            <a href="about.html">About</a>
+            <a href="reviews.html">Reviews</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="logo2.jpg" alt="Auto Info">
+        <div class="search-box">
+            <input type="text" placeholder="Search for a car...">
+            <button onclick="searchCar()">🔍</button>
+        </div>
+    </section>
+
+    <section class="trending">
+        <h2>Trending</h2>
+        <div class="trending-container">
+            <div class="trending-item" onclick="location.href='sedan.html'">
+                <img src="SEDAN.png" alt="Sedan">
+                <p>SEDAN</p>
+            </div>
+            <div class="trending-item" onclick="location.href='suv.html'">
+                <img src="SUV.png" alt="SUV">
+                <p>SUV</p>
+            </div>
+            <div class="trending-item" onclick="location.href='hatchback.html'">
+                <img src="HATCHBACK.png" alt="Hatchback">
+                <p>HATCHBACK</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function searchCar() {
+            let query = document.querySelector('.search-box input').value;
+            if(query) {
+                alert('Searching for ' + query);
+                // Implement search functionality here
+            }
+        }
+    </script>
+</body>
+</html>

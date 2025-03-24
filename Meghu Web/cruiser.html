@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Info</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: white;
+    }
+
+    header {
+      background: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 16px;
+      position: relative;
+    }
+
+    .nav-links a:nth-child(2)::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: white;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      margin: 30px auto 20px;
+      width: 80%;
+      border: 2px solid black;
+      border-radius: 30px;
+      padding: 10px 20px;
+      justify-content: space-between;
+    }
+
+    .search-bar input {
+      border: none;
+      outline: none;
+      font-size: 16px;
+      flex: 1;
+    }
+
+    .search-bar-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar-icons img {
+      height: 24px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin: 20px 60px 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      padding: 0 60px 60px;
+    }
+
+    .card {
+        background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 180px;
+    border: 1px solid black;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card .model {
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .card .price {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo" onclick="location.href='index.html'">
+      <img src="logo.jpg" alt="logo" />
+    </div>
+    <div class="nav-links">
+        <a href="cars.html">Cars</a>
+      <a href="bikes.html">Bikes</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+    <div class="search-bar-icons">
+      <img src="https://img.icons8.com/ios-filled/50/000000/car.png" alt="car"/>
+      <img src="https://img.icons8.com/ios-filled/50/000000/filter.png" alt="filter"/>
+    </div>
+  </div>
+
+  <h2>Scooter</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="bullet350.png" alt="RE Bullet 350">
+      <div class="model">RE Bullet 350</div>
+      <div class="price">Rs. 1.05L</div>
+    </div>
+    <div class="card">
+      <img src="FZX.png" alt="Yamaha FZ X">
+      <div class="model">Yamaha FZ X</div>
+      <div class="price">Rs. 1.34L</div>
+    </div>
+    <div class="card">
+      <img src="splendorplus.png" alt="Splendor Plus">
+      <div class="model">Splendor Plus</div>
+      <div class="price">Rs. 1.19L</div>
+    </div>
+    <div class="card">
+      <img src="pulsar150.png" alt="Pulsar 150">
+      <div class="model">Pulsar 150</div>
+      <div class="price">Rs. 1.55L</div>
+    </div>
+    <div class="card">
+      <img src="xtreme150R.png" alt="Xtreme 160R">
+      <div class="model">Xtreme 160R</div>
+      <div class="price">Rs. 1.03L</div>
+    </div>
+    <div class="card">
+      <img src="SP125.png" alt="SP 125">
+      <div class="model">SP 125</div>
+      <div class="price">Rs. 1.34L</div>
+    </div>
+  </div>
+  
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Info - Bikes</title>
+    <script defer src="script.js"></script>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.search-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#search {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+#filter-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.car-category, .bike-category {
+    padding: 20px;
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+}
+
+.view-all {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.car-list, .bike-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 12px 0;
+}
+
+.car-card, .bike-card {
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.car-card img, .bike-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .search-filter {
+        flex-direction: column;
+    }
+    
+    #search {
+        width: 100%;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo" onclick="location.href='index.html'">
+            <img src="logo.jpg" alt="Auto Info Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="bikes.html">Bikes</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="search-filter">
+        <input type="text" id="search" placeholder="Search for bikes...">
+        <button id="filter-btn">&#128269; Filter</button>
+    </section>
+    
+    <section class="bike-category">
+        <h2>Cruiser <span class="view-all" onclick="location.href='cruiser.html'">View all &#10095;</span></h2>
+        <div class="bike-list">
+            <div class="bike-card"><img src="bullet350.png" alt="RE Bullet 350"><br>RE Bullet 350<br>Rs. 1.05L</div>
+            <div class="bike-card"><img src="FZX.png" alt="Yamaha FZ X"><br>Yamaha FZ X<br>Rs. 1.34L</div>
+            <div class="bike-card"><img src="splendorplus.png" alt="Splendor Plus"><br>Splendor Plus<br>Rs. 1.19L</div>
+            <div class="bike-card"><img src="pulsar150.png" alt="Pulsar 150"><br>Pulsar 150<br>Rs. 1.55L</div>
+            <div class="bike-card"><img src="xtreme150R.png" alt="Xtreme 160R"><br>Xtreme 160R<br>Rs. 1.03L</div>
+            <div class="bike-card"><img src="SP125.png" alt="SP 125"><br>SP 125<br>Rs. 1.34L</div>
+        </div>
+    </section>
+    
+    <section class="bike-category">
+        <h2>Scooters <span class="view-all" onclick="location.href='scooter.html'">View all &#10095;</span></h2>
+        <div class="bike-list">
+            <div class="bike-card"><img src="jupitor.png" alt="TVS Jupiter"><br>TVS Jupiter<br>Rs. 2.45L</div>
+            <div class="bike-card"><img src="vespa.png" alt="Vespa VXL 125"><br>Vespa VXL 125<br>Rs. 2.24L</div>
+            <div class="bike-card"><img src="wego.png" alt="TVS Wego"><br>TVS Wego<br>Rs. 2.99L</div>
+            <div class="bike-card"><img src="pep.png" alt="Scooty Pep"><br>Scooty Pep<br>Rs. 1.49L</div>
+            <div class="bike-card"><img src="activa.png" alt="Honda Activa 3G"><br>Honda Activa 3G<br>Rs. 2.69L</div>
+            <div class="bike-card"><img src="RayZR.png" alt="Yamaha Ray ZR"><br>Yamaha Ray ZR<br>Rs. 1.94L</div>
+        </div>
+    </section>
+</body>
+</html>
